@@ -18,14 +18,7 @@ class WaveViewController: UIViewController {
     }
     
     func setupWaveView() {
-        waveView = WaveView()
+        waveView = WaveView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         self.view.addSubview(waveView)
-        
-        waveView.translatesAutoresizingMaskIntoConstraints = false
-        waveView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        waveView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-        waveView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        waveView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-         
     }
 }
