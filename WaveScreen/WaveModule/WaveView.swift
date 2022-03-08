@@ -24,22 +24,36 @@ class WaveView: UIView {
         return layer
     }()
     
+    lazy var layer4: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        return layer
+    }()
+    
+    lazy var layer5: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        return layer
+    }()
+    
+    lazy var layer6: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        return layer
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         drawLayer1()
         drawLayer2()
         drawLayer3()
-        
-//        drawLayer4()
-//        drawLayer5()
-//        drawLayer6()
+        drawLayer4()
+        drawLayer5()
+        drawLayer6()
         
         func drawLayer1() {
             let path1 = UIBezierPath()
             path1.move(to: CGPoint(x: 0, y: 0))
             path1.addLine(to: CGPoint(x: frame.width, y: 0))
-            path1.addLine(to: CGPoint(x: frame.width, y: 175))
+            path1.addLine(to: CGPoint(x: frame.width, y: 200))
             path1.addCurve(to: CGPoint(x: 0, y: 175), controlPoint1: CGPoint(x: 100, y: 350), controlPoint2: CGPoint(x: -100, y: -300))
             path1.addLine(to: CGPoint(x: 0, y: 0))
 
@@ -78,6 +92,51 @@ class WaveView: UIView {
             layer3.opacity = 0.6
             layer3.frame = bounds
             layer.insertSublayer(layer3, at: 2)
+        }
+        
+        func drawLayer4() {
+            let path1 = UIBezierPath()
+            path1.move(to: CGPoint(x: 0, y: 0))
+            path1.addLine(to: CGPoint(x: frame.width, y: 0))
+            path1.addLine(to: CGPoint(x: frame.width, y: 100))
+            path1.addCurve(to: CGPoint(x: 0, y: 175), controlPoint1: CGPoint(x: 200, y: 150), controlPoint2: CGPoint(x: 100, y: 200))
+            path1.addLine(to: CGPoint(x: 0, y: 0))
+
+            layer4.path = path1.cgPath
+            layer4.fillColor = Palette.color4
+            layer4.opacity = 0.8
+            layer4.frame = bounds
+            layer.insertSublayer(layer4, at: 2)
+        }
+        
+        func drawLayer5() {
+            let path1 = UIBezierPath()
+            path1.move(to: CGPoint(x: 0, y: 0))
+            path1.addLine(to: CGPoint(x: frame.width, y: 0))
+            path1.addLine(to: CGPoint(x: frame.width, y: 100))
+            path1.addCurve(to: CGPoint(x: 0, y: 200), controlPoint1: CGPoint(x: 150, y: 100), controlPoint2: CGPoint(x: 100, y: 300))
+            path1.addLine(to: CGPoint(x: 0, y: 0))
+
+            layer5.path = path1.cgPath
+            layer5.fillColor = Palette.color5
+            layer5.opacity = 0.7
+            layer5.frame = bounds
+            layer.insertSublayer(layer5, at: 1)
+        }
+        
+        func drawLayer6() {
+            let path1 = UIBezierPath()
+            path1.move(to: CGPoint(x: 0, y: 0))
+            path1.addLine(to: CGPoint(x: frame.width, y: 0))
+            path1.addLine(to: CGPoint(x: frame.width, y: 200))
+            path1.addCurve(to: CGPoint(x: 0, y: 250), controlPoint1: CGPoint(x: 200, y: 150), controlPoint2: CGPoint(x: 150, y: 400))
+            path1.addLine(to: CGPoint(x: 0, y: 0))
+
+            layer6.path = path1.cgPath
+            layer6.fillColor = Palette.color6
+            layer6.opacity = 0.6
+            layer6.frame = bounds
+            layer.insertSublayer(layer6, at: 0)
         }
     }
     
