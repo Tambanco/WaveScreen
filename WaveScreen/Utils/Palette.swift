@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 struct Palette {
-    static let color1 = UIColor(rgb: 0x384D59).cgColor
+    static let color1 = UIColor(rgb: 0x1d1d1d).cgColor
     static let color2 = UIColor(rgb: 0xD0AEDE).cgColor
-    static let color3 = UIColor(rgb: 0xC56F30).cgColor
+    static let color3 = UIColor(rgb: 0xC56E2F).cgColor
     
     static let color4 = UIColor(rgb: 0x507A6C).cgColor
     static let color5 = UIColor(rgb: 0xA5DF8A).cgColor

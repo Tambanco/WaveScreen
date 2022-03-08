@@ -59,7 +59,7 @@ class WaveView: UIView {
 
             layer1.path = path1.cgPath
             layer1.fillColor = Palette.color1
-            layer1.opacity = 0.8
+            layer1.opacity = 1
             layer1.frame = bounds
             layer.insertSublayer(layer1, at: 0)
         }
@@ -84,12 +84,12 @@ class WaveView: UIView {
             path3.move(to: CGPoint(x: 0, y: 0))
             path3.addLine(to: CGPoint(x: frame.width, y: 0))
             path3.addLine(to: CGPoint(x: frame.width, y: 175))
-            path3.addCurve(to: CGPoint(x: 0, y: 175), controlPoint1: CGPoint(x: 100, y: 400), controlPoint2: CGPoint(x: -100, y: -400))
+            path3.addCurve(to: CGPoint(x: -100, y: 175), controlPoint1: CGPoint(x: 100, y: 400), controlPoint2: CGPoint(x: 75, y: -400))
             path3.addLine(to: CGPoint(x: 0, y: 0))
 
             layer3.path = path3.cgPath
             layer3.fillColor = Palette.color3
-            layer3.opacity = 0.6
+            layer3.opacity = 0.7
             layer3.frame = bounds
             layer.insertSublayer(layer3, at: 2)
         }
@@ -104,7 +104,7 @@ class WaveView: UIView {
 
             layer4.path = path1.cgPath
             layer4.fillColor = Palette.color4
-            layer4.opacity = 0.8
+            layer4.opacity = 0.7
             layer4.frame = bounds
             layer.insertSublayer(layer4, at: 2)
         }
@@ -114,7 +114,7 @@ class WaveView: UIView {
             path1.move(to: CGPoint(x: 0, y: 0))
             path1.addLine(to: CGPoint(x: frame.width, y: 0))
             path1.addLine(to: CGPoint(x: frame.width, y: 100))
-            path1.addCurve(to: CGPoint(x: 0, y: 200), controlPoint1: CGPoint(x: 150, y: 100), controlPoint2: CGPoint(x: 100, y: 300))
+            path1.addCurve(to: CGPoint(x: 0, y: 200), controlPoint1: CGPoint(x: 150, y: 50), controlPoint2: CGPoint(x: 100, y: 300))
             path1.addLine(to: CGPoint(x: 0, y: 0))
 
             layer5.path = path1.cgPath
@@ -134,7 +134,7 @@ class WaveView: UIView {
 
             layer6.path = path1.cgPath
             layer6.fillColor = Palette.color6
-            layer6.opacity = 0.6
+            layer6.opacity = 0.7
             layer6.frame = bounds
             layer.insertSublayer(layer6, at: 0)
         }
