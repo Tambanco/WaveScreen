@@ -14,6 +14,7 @@
 		496A5A8C27D73DB700AD1B2E /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A5A8B27D73DB700AD1B2E /* WaveView.swift */; };
 		496A5A8F27D73DD600AD1B2E /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A5A8E27D73DD600AD1B2E /* WaveViewController.swift */; };
 		496A5A9127D7A9B700AD1B2E /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A5A9027D7A9B700AD1B2E /* ColorHex.swift */; };
+		496A5A9427D7B0E000AD1B2E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A5A9327D7B0E000AD1B2E /* Palette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		496A5A8B27D73DB700AD1B2E /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		496A5A8E27D73DD600AD1B2E /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
 		496A5A9027D7A9B700AD1B2E /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		496A5A9327D7B0E000AD1B2E /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				496A5A9027D7A9B700AD1B2E /* ColorHex.swift */,
+				496A5A9327D7B0E000AD1B2E /* Palette.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				496A5A7827D73D5700AD1B2E /* AppDelegate.swift in Sources */,
 				496A5A9127D7A9B700AD1B2E /* ColorHex.swift in Sources */,
 				496A5A7A27D73D5700AD1B2E /* SceneDelegate.swift in Sources */,
+				496A5A9427D7B0E000AD1B2E /* Palette.swift in Sources */,
 				496A5A8F27D73DD600AD1B2E /* WaveViewController.swift in Sources */,
 				496A5A8C27D73DB700AD1B2E /* WaveView.swift in Sources */,
 			);

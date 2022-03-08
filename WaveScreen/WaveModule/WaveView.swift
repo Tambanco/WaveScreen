@@ -31,9 +31,9 @@ class WaveView: UIView {
         drawLayer2()
         drawLayer3()
         
-        drawLayer4()
-        drawLayer5()
-        drawLayer6()
+//        drawLayer4()
+//        drawLayer5()
+//        drawLayer6()
         
         func drawLayer1() {
             let path1 = UIBezierPath()
@@ -44,7 +44,7 @@ class WaveView: UIView {
             path1.addLine(to: CGPoint(x: 0, y: 0))
 
             layer1.path = path1.cgPath
-            layer1.fillColor = UIColor.gray.cgColor
+            layer1.fillColor = Palette.color1
             layer1.opacity = 0.8
             layer1.frame = bounds
             layer.insertSublayer(layer1, at: 0)
@@ -60,7 +60,7 @@ class WaveView: UIView {
 
             layer2.path = path2.cgPath
             layer2.opacity = 0.7
-            layer2.fillColor = UIColor.green.cgColor
+            layer2.fillColor = Palette.color2
             layer2.frame = bounds
             layer.insertSublayer(layer2, at: 1)
         }
@@ -74,7 +74,7 @@ class WaveView: UIView {
             path3.addLine(to: CGPoint(x: 0, y: 0))
 
             layer3.path = path3.cgPath
-            layer3.fillColor = UIColor.blue.cgColor
+            layer3.fillColor = Palette.color3
             layer3.opacity = 0.6
             layer3.frame = bounds
             layer.insertSublayer(layer3, at: 2)
