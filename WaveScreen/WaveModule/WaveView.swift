@@ -19,14 +19,21 @@ class WaveView: UIView {
         return layer
     }()
     
+    lazy var layer3: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        return layer
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         layer.insertSublayer(layer1, at: 0)
         layer.insertSublayer(layer2, at: 1)
+        layer.insertSublayer(layer3, at: 2)
         
         layer1.opacity = 0.8
-        layer2.opacity = 0.8
+        layer2.opacity = 0.7
+        layer3.opacity = 0.6
         
         let path1 = UIBezierPath()
         path1.move(to: CGPoint(x: 0, y: 0))
@@ -49,6 +56,17 @@ class WaveView: UIView {
         layer2.path = path2.cgPath
         layer2.fillColor = UIColor.green.cgColor
         layer2.frame = bounds
+        
+        let path3 = UIBezierPath()
+        path3.move(to: CGPoint(x: 0, y: 0))
+        path3.addLine(to: CGPoint(x: frame.width, y: 0))
+        path3.addLine(to: CGPoint(x: frame.width, y: 175))
+        path3.addCurve(to: CGPoint(x: 0, y: 175), controlPoint1: CGPoint(x: 100, y: 400), controlPoint2: CGPoint(x: -100, y: -400))
+        path3.addLine(to: CGPoint(x: 0, y: 0))
+
+        layer3.path = path3.cgPath
+        layer3.fillColor = UIColor.blue.cgColor
+        layer3.frame = bounds
     }
     
     required init?(coder: NSCoder) {

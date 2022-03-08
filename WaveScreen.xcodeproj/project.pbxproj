@@ -13,6 +13,7 @@
 		496A5A8427D73D5800AD1B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496A5A8227D73D5800AD1B2E /* LaunchScreen.storyboard */; };
 		496A5A8C27D73DB700AD1B2E /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A5A8B27D73DB700AD1B2E /* WaveView.swift */; };
 		496A5A8F27D73DD600AD1B2E /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A5A8E27D73DD600AD1B2E /* WaveViewController.swift */; };
+		496A5A9127D7A9B700AD1B2E /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A5A9027D7A9B700AD1B2E /* ColorHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		496A5A8527D73D5800AD1B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496A5A8B27D73DB700AD1B2E /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		496A5A8E27D73DD600AD1B2E /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
+		496A5A9027D7A9B700AD1B2E /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				496A5A7727D73D5700AD1B2E /* AppDelegate.swift */,
 				496A5A7927D73D5700AD1B2E /* SceneDelegate.swift */,
 				496A5A8D27D73DC000AD1B2E /* WaveModule */,
+				496A5A9227D7A9C400AD1B2E /* Utils */,
 				496A5A8027D73D5800AD1B2E /* Assets.xcassets */,
 				496A5A8227D73D5800AD1B2E /* LaunchScreen.storyboard */,
 				496A5A8527D73D5800AD1B2E /* Info.plist */,
@@ -73,6 +76,14 @@
 				496A5A8B27D73DB700AD1B2E /* WaveView.swift */,
 			);
 			path = WaveModule;
+			sourceTree = "<group>";
+		};
+		496A5A9227D7A9C400AD1B2E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				496A5A9027D7A9B700AD1B2E /* ColorHex.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496A5A7827D73D5700AD1B2E /* AppDelegate.swift in Sources */,
+				496A5A9127D7A9B700AD1B2E /* ColorHex.swift in Sources */,
 				496A5A7A27D73D5700AD1B2E /* SceneDelegate.swift in Sources */,
 				496A5A8F27D73DD600AD1B2E /* WaveViewController.swift in Sources */,
 				496A5A8C27D73DB700AD1B2E /* WaveView.swift in Sources */,
