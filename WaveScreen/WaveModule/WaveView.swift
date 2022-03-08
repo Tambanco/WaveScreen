@@ -14,21 +14,41 @@ class WaveView: UIView {
         return layer
     }()
     
+    lazy var layer2: CAShapeLayer = {
+        let layer = CAShapeLayer()
+        return layer
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        layer.addSublayer(layer1)
+        layer.insertSublayer(layer1, at: 0)
+        layer.insertSublayer(layer2, at: 1)
+        
+        layer1.opacity = 0.8
+        layer2.opacity = 0.8
         
         let path1 = UIBezierPath()
         path1.move(to: CGPoint(x: 0, y: 0))
         path1.addLine(to: CGPoint(x: frame.width, y: 0))
-        path1.addLine(to: CGPoint(x: frame.width, y: 200))
-        path1.addCurve(to: CGPoint(x: 0, y: 200), controlPoint1: CGPoint(x: 100, y: 300), controlPoint2: CGPoint(x: -100, y: -300))
+        path1.addLine(to: CGPoint(x: frame.width, y: 175))
+        path1.addCurve(to: CGPoint(x: 0, y: 175), controlPoint1: CGPoint(x: 100, y: 350), controlPoint2: CGPoint(x: -100, y: -300))
         path1.addLine(to: CGPoint(x: 0, y: 0))
-        
+
         layer1.path = path1.cgPath
         layer1.fillColor = UIColor.gray.cgColor
         layer1.frame = bounds
+        
+        let path2 = UIBezierPath()
+        path2.move(to: CGPoint(x: 0, y: 0))
+        path2.addLine(to: CGPoint(x: frame.width, y: 0))
+        path2.addLine(to: CGPoint(x: frame.width + 20, y: 220))
+        path2.addCurve(to: CGPoint(x: -100, y: 50), controlPoint1: CGPoint(x: 100, y: 400), controlPoint2: CGPoint(x: 150, y: 50))
+        path2.addLine(to: CGPoint(x: 0, y: 0))
+
+        layer2.path = path2.cgPath
+        layer2.fillColor = UIColor.green.cgColor
+        layer2.frame = bounds
     }
     
     required init?(coder: NSCoder) {
